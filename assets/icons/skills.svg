@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+	<title>skills</title>
+	<defs>
+		<image  width="104" height="104" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoCAMAAAAqwkWTAAAAAXNSR0IB2cksfwAAARFQTFRFAAAA2dnZeXl5Pj4+DQ0NAwMDAAAAERERNzc3gICA09PT1dXVTk5OAQEBSkpK2NjYlZWVCgoKAgICmpqafHx8CAgIBQUFT09PSEhI19fXPDw8fn5+e3t72tramJiYl5eXdnZ2ra2tYmJiISEh3t7ewsLCk5OTDAwMVFRUlJSUv7+/ZWVlX19fKysr4ODgsbGxtbW1f39/IyMj3NzcpaWlyMjIkpKSCwsLBwcHUlJSoKCgV1dXLi4uCQkJkZGR3d3d0dHRBgYGtra2bGxslpaWysrKHh4eSUlJfX19aGhonp6eW1tbWVlZ0NDQQkJCs7OzqqqqxcXFREREFxcXMzMzRkZG1tbWFBQUmZmZoqKiqKioyn6vfgAAAFt0Uk5TAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xninq0AAAQxSURBVHictVrrWtpAEI1IAopYLwURFEVUULxCK0WDiq3Uir1otbf3f5BGCJtNMruZ2Sz7ffOHzOzZkyFz9mYYam0qMZ00rVR6ZlaxA1zLzFmWlR3Z/JvJ4SwsWkuWOTZzeVI4iazHZ2hvJ4OzYPJ8hjYRTplcgI9j+UnkaSXEx7GCfpzVMJ9Xy2gHSgB8HJvRDlSE+FjZonagJMTHqRHagUA+jmkHAvk4ph0oBedI/6tLwzma1g5UgnO0ho1H68ssnKMpHAxFX+ahHM3hcEj6sm6G+SzidJaoL+VwjjZwfKj6Ugr6b6JwFPTFzymH46OkL3nOdwU5D1LRl8rYL1lcW8XBqOnLluuXxoK8NhV9qbp+JQqQgr5sj/12KEAK+rLr+tQoOCr6Und96iQgBX1Juj57JCC6vuyPfbZJQAJ92ZJFjHyqJByRvuQWhBHjd9CQdQvoG6gvjh2I+jBdn4oYBtQ3SF+GdngEdnLsPs+LcQT6BujLyJInUC8N97m4/gj1LaQvzE6BbpruM2E1lOhbOS+qD2G5aI2fieqPVN/WC5y+vKtyY6m+D/Rz5j5riwhF6FumVHRqRGqkLwVuPB/K/n467u8dAQ5N30758bD/+fmF3WW/XwqAiPp2kuLGY185v1xf9HxjbAkiqfp2ZHPjSd4YH4NjFNWFGlnfDvgxATW+Cbz2nVJaQd8+dYXf1+h/d+tz3z6rL0r8JUDGbV9UM9w5kMep0qjKfSPWT5/lnEZCsT+Tzsv95Po2bHfycX5p7XaSkueeRa6fbmpRY8VZ9PrpKoUYb6Rh1k854tihfGHWT/eksVcbFdX10wWaS7t+OZoXqa2fbBQXM13i9Mmvb8j1UzeaS7NxHAjy6Rty/RTFpbMH1nGfvqFaFB9sP5GtJs+PUNHJ7VCeH1sb0ECeowdtQGV5js61ARmmLEc9fTjOu5Nwoi365O1rVpKja41AxkCcI8lyTaHZ4hzp+3MbEfOGb/pwDuTfkXBdSG13UbVuUw/ORrQW0XYbBO27N/atQdbjkas3vDnCj/g4jzlfLpYHh04tb9sP9wafuy5p7wlqrRTj8BR+WmCcfsY9perLv5dnb+4TD8dmfPqwQ5Nxeo6D88L4pATz2V+/GacXdZwB49MLLsxZ22kzTspVL+F9K8G5FNcqJuOEPm7xtzPvm/mjw0840iXGJ2Kk3r5PVsI80Nge21/Cu+dy+Q93BsXvsTFDHE0/AfVPdgbl32OjfB82UNPFZ1ChPbZXQ37xfShWcAYF7LHhaxhXEzkDOUF7bFb3EYfjVPkewAk8gwL32AgzjzQUD/yR4t5RQMfHvaOAjo97RwEdH/eOAjpeNMfBAqHj465P0fFx7yig4+PeUUDHx72jgI6Pd0eBEh/njgIpPsYdBWK88h0FcrziHQWFeKU9NqV4lT02xXj6Hhsh/j9FlK+vz4znjQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="skills">
+		<use id="_a_frm0,170" href="#img1" x="8" y="8"/>
+	</g>
+</svg>

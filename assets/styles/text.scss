@@ -1,0 +1,13 @@
+@import 'assets/variables';
+
+.text--dark {
+  color: $theme-dark-tertiary !important;
+}
+
+.text--light {
+  color: $theme-light-tertiary !important;
+}
+
+.text--dark-blue {
+  color: $theme-light-quaternary !important;
+}

@@ -1,0 +1,202 @@
+@import 'assets/variables/theme';
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+  font-family: 'Hind', sans-serif;
+  cursor: url('../assets/cursor.png'), pointer !important;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $theme-dark-primary;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $theme-dark-primary;
+  border-radius: 11px;
+  border: none;
+}
+
+.v-main__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// styles all first elements of pages
+.pages_main__container {
+  width: 100%;
+  z-index: 3;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+.main-enter-active,
+.main-leave-active {
+  transition: all 0.8s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+}
+
+.main-enter,
+.main-leave-active {
+  opacity: 0.5;
+  transform: scale(0.5, 1.3)
+    matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 9000, 5, 5.1, 1.1);
+}
+
+@mixin glow_mixin(
+  $name,
+  $first_color,
+  $second_color,
+  $third_color,
+  $blur_radius,
+  $shadow_type
+) {
+  @keyframes #{$name} {
+    from {
+      #{$shadow_type}: 0 0 $blur_radius $first_color,
+        0 0 ($blur_radius + $blur_radius) $first_color,
+        0 0 ($blur_radius + $blur_radius * 2) $second_color,
+        0 0 ($blur_radius + $blur_radius * 3) $second_color,
+        0 0 ($blur_radius + $blur_radius * 4) $second_color,
+        0 0 ($blur_radius + $blur_radius * 5) $second_color,
+        0 0 ($blur_radius + $blur_radius * 6) $second_color;
+    }
+    to {
+      #{$shadow_type}: 0 0 ($blur_radius + $blur_radius) $first_color,
+        0 0 ($blur_radius + $blur_radius * 2) $third_color,
+        0 0 ($blur_radius + $blur_radius * 3) $third_color,
+        0 0 ($blur_radius + $blur_radius * 4) $third_color,
+        0 0 ($blur_radius + $blur_radius * 5) $third_color,
+        0 0 ($blur_radius + $blur_radius * 6) $third_color,
+        0 0 ($blur_radius + $blur_radius * 7) $third_color;
+    }
+  }
+  @-webkit-keyframes #{$name} {
+    from {
+      #{$shadow_type}: 0 0 $blur_radius $first_color,
+        0 0 ($blur_radius + $blur_radius) $first_color,
+        0 0 ($blur_radius + $blur_radius * 2) $second_color,
+        0 0 ($blur_radius + $blur_radius * 3) $second_color,
+        0 0 ($blur_radius + $blur_radius * 4) $second_color,
+        0 0 ($blur_radius + $blur_radius * 5) $second_color,
+        0 0 ($blur_radius + $blur_radius * 6) $second_color;
+    }
+    to {
+      #{$shadow_type}: 0 0 ($blur_radius + $blur_radius) $first_color,
+        0 0 ($blur_radius + $blur_radius * 2) $third_color,
+        0 0 ($blur_radius + $blur_radius * 3) $third_color,
+        0 0 ($blur_radius + $blur_radius * 4) $third_color,
+        0 0 ($blur_radius + $blur_radius * 5) $third_color,
+        0 0 ($blur_radius + $blur_radius * 6) $third_color,
+        0 0 ($blur_radius + $blur_radius * 7) $third_color;
+    }
+  }
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@include glow_mixin(
+  'glow',
+  $theme-dark-secondary,
+  $theme-dark-primary,
+  $theme-dark-quaternary,
+  5px,
+  'box-shadow'
+);
+
+.tooltip__glow {
+  margin: 0 20px;
+  -webkit-animation: tooltipglow 1s ease-in-out infinite alternate;
+  -moz-animation: tooltipglow 1s ease-in-out infinite alternate;
+  animation: tooltipglow 1s ease-in-out infinite alternate;
+}
+
+@include glow_mixin(
+  'tooltipglow',
+  $theme-dark-primary,
+  $theme-dark-quaternary,
+  $theme-dark-primary,
+  5px,
+  'box-shadow'
+);
+
+.text__glow {
+  -webkit-animation: textglow 1s ease-in-out infinite alternate;
+  -moz-animation: textglow 1s ease-in-out infinite alternate;
+  animation: textglow 1s ease-in-out infinite alternate;
+}
+
+@include glow_mixin(
+  'textglow',
+  $theme-dark-primary,
+  $theme-dark-quaternary,
+  $theme-dark-primary,
+  2px,
+  'text-shadow'
+);
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact_card {
+  border: 3px solid $theme-dark-primary !important;
+  background-color: $theme-dark-secondary !important;
+  transform: scale3d(1.05, 1.05, 1.05);
+  min-height: 300px;
+  min-width: 100%;
+}
+.contact_card * {
+  color: $theme-dark-primary !important;
+}
+.contact_card .title {
+  font-weight: 700;
+}
+
+.projects_cards {
+  white-space: pre-line !important;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 6px;
+  border: 3px solid $theme-dark-primary !important;
+  background-size: 100% 100%;
+  transition: all 0.6s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+}
+
+.projects_cards:not(#selected) {
+  margin-left: -6%;
+}
+
+.projects_cards:not(#selected):hover {
+  transition: all 0.6s cubic-bezier(0.5, 0.5, 0.4, 1.2);
+  transform: scale3d(1.05, 1.05, 1.05);
+  z-index: 1000;
+}
+
+.projecs_cards_img .v-image__image {
+  filter: blur(2px) brightness(45%);
+}
+
+.projecs_cards_img {
+  align-items: center;
+  justify-content: center;
+}
